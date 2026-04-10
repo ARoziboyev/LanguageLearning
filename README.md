@@ -15,7 +15,7 @@ A modern, full-stack web application for learning languages through real-time 10
 
 ### 🌐 Language Selection
 Support for 7 languages:
-- 🇬🇧 English
+- US English
 - 🇷🇺 Russian
 - 🇸🇦 Arabic
 - 🇰🇷 Korean
@@ -73,7 +73,7 @@ To make this fully functional, you need to set up the backend:
    - Follow the connection flow
 
 2. **Choose a WebRTC Provider**
-   - Recommended: [Daily.co](https://daily.co) (Free tier available)
+   - Recommended: [Daily.co](https://daily.com) (Free tier available)
    - Alternative: Agora.io or custom solution
    - Add API keys to Supabase secrets in settings
 
