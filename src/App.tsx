@@ -1,17 +1,17 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from '../contexts/AuthContext';
-import { ThemeProvider } from '../contexts/ThemeContext';
-import { ErrorBoundary } from './components/ErrorBoundary';
-import LandingPage from './components/LandingPage';
-import LoginPage from './components/LoginPage';
-import RegisterPage from './components/RegisterPage';
-import LanguageSelectPage from './components/LanguageSelectPage';
-import VideoChatRoom from './components/VideoChatRoom';
-import ProfilePage from './components/ProfilePage';
-import ProtectedRoute from './components/ProtectedRoute';
-import ThemeToggle from './components/ThemeToggle';
+import { AuthProvider } from './contexts/AuthContext';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { ErrorBoundary } from './app/components/ErrorBoundary';
+import LandingPage from './app/components/LandingPage';
+import LoginPage from './app/components/LoginPage';
+import RegisterPage from './app/components/RegisterPage';
+import LanguageSelectPage from './app/components/LanguageSelectPage';
+import VideoChatRoom from './app/components/VideoChatRoom';
+import ProfilePage from './app/components/ProfilePage';
+import ProtectedRoute from './app/components/ProtectedRoute';
+import ThemeToggle from './app/components/ThemeToggle';
 export default function App() {
   // Suppress browser extension errors on mount
   useEffect(() => {
