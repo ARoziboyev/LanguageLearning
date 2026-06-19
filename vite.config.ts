@@ -1,8 +1,12 @@
 import { defineConfig } from 'vite'
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 function figmaAssetResolver() {
   return {
@@ -30,7 +34,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
